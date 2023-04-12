@@ -98,8 +98,9 @@ header .header-wrap {
     position: relative;
 }
 header .header-wrap .text-right {
-    margin-top: 70px;
+    margin: 100px 0;
     text-align: right;
+    width: 770px;
 }
 header .header-wrap .text-right h4 {
     color: var(--main-color);
@@ -139,6 +140,7 @@ header .header-wrap .text-right p {
     font-size: 20px;
     margin-top: 30px;
     color: #242A37;
+    padding-left: 65px;
 }
 header .header-wrap .text-right .buttons {
     margin-top: 30px;
@@ -169,8 +171,6 @@ header .header-wrap .text-right .b1:hover {
 }
 header .header-wrap .text-right .b1 a {
     color: #fff;
-    text-decoration: none;
-    font-size: 16px;
 }
 header .header-wrap .text-right .b1:hover a {
     color: #094E81;
@@ -206,13 +206,14 @@ header .header-wrap .text-right .b2 {
     text-align: right;
 }
 header .header-wrap .text-right .b2 a {
-    text-decoration: none;
     color: #094E81;
     font-size: 20px;
 }
+header .header-wrap .text-right button a {
+    text-decoration: none;
+}
 header .header-wrap .img-box {
     text-align: center;
-    height: auto;
     overflow: hidden;
     margin-top: 60px;
 }
@@ -257,7 +258,58 @@ header .header-wrap .img-box span.i5 {
     left: 60%;
     animation: move .5s ease-in-out infinite alternate;
     -webkit-animation: move 1.5s ease-in-out 2s infinite alternate;
+}
+header .header-wrap .img-box .clients {
+    width: 253px;
+    height: 111px;
+    background-image: linear-gradient(to right,#FBF9FB, #E3C8D9, #F3E1D1);
+    box-shadow: 0 20px 60px #094E8129;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    backdrop-filter: blur(34px);
+    position: absolute;
+    top: 380px;
+    left: 150px;
+    padding: 17px;
+    text-align: center;
 } 
+header .header-wrap .img-box .clients p {
+    color: #242A37;
+}
+header .header-wrap .img-box .clients img {
+    width: 174px;
+    height: 40px;
+    margin: 0;
+    max-width: 100%;
+}
+header .header-wrap .angle-down {
+    width: 46px;
+    height: 46px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: calc(100% - 23px);
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .header-wrap .angle-down .down {
+    color: #fff;
+    font-weight: bold;
+}
 @keyframes move {
     0% {
         transform: translateY(0);
