@@ -1,0 +1,7 @@
+<svg id="vuesax_bold_crown" data-name="vuesax/bold/crown" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="crown">
+    <path id="Vector" d="M13.438,1.875H.938A.944.944,0,0,1,0,.938.944.944,0,0,1,.938,0h12.5a.944.944,0,0,1,.938.938A.944.944,0,0,1,13.438,1.875Z" transform="translate(7.813 25.625)" fill="#5fad51"/>
+    <path id="Vector-2" data-name="Vector" d="M22.852,4.116l-5,3.575a1.258,1.258,0,0,1-1.9-.575L13.59.816a1.245,1.245,0,0,0-2.337,0L8.877,7.1a1.232,1.232,0,0,1-1.888.575L1.99,4.1A1.26,1.26,0,0,0,.077,5.553l5.2,14.562a1.24,1.24,0,0,0,1.175.825H18.365a1.257,1.257,0,0,0,1.175-.825l5.2-14.562A1.239,1.239,0,0,0,22.852,4.116ZM15.54,15.653H9.29a.938.938,0,0,1,0-1.875h6.25a.937.937,0,0,1,0,1.875Z" transform="translate(2.585 2.784)" fill="#094e81"/>
+    <path id="Vector-3" data-name="Vector" d="M0,0H30V30H0Z" transform="translate(30 30) rotate(180)" fill="none" opacity="0"/>
+  </g>
+</svg>
