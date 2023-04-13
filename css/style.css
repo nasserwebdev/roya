@@ -4,8 +4,11 @@
     --main-color: #5FAD51;
     --secondary-color: #242a37;
     --main-font-size: 16px;
-    --main-padding: 160px;
+    --main-padding: 140px;
     --transition-3s: .3s ease-in-out;
+}
+* {
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -17,7 +20,6 @@ body {
 }
 section {
     padding-top: var(--main-padding);
-    padding-bottom: var(--main-padding);
 }
 ul {
     padding: 0;
@@ -401,4 +403,96 @@ header .header-wrap .angle-down .down {
     color: #fff;
 }
 /* End Our Services */
+
+/* Start Why Us Section */
+.why-us h6 {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom: 24px;
+    position: relative;
+    margin-right: 55px;
+}
+.why-us h6::before {
+    content: "";
+    width: 42px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    right: -55px;
+    top: 8px;
+}
+.why-us .solution {
+    margin-top: 30px;
+}
+.why-us .solution {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.why-us .solution .icon {
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    border-radius: 6px;;
+    background-color: #F1F5F8;
+    margin-left: 20px;
+    flex-basis: 25%;
+    align-self: flex-start;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why-us .solution .text h4 {
+    font-size: 20px;
+}
+.why-us .solution .text p {
+    font-size: 14px;
+    color: #50555F;
+    width: 602px;
+}
+
+.why-us .image {
+    width: 786px;
+    height: 573px;
+    margin-top: 100px;
+    position: relative;
+}
+.why-us .image::before {
+    content: "";
+    width: 137px;
+    height: 111px;
+    background-color: var(--main-color);
+    border-radius: 0px 12px 0px 12px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: -1;
+    -webkit-border-radius: 0px 12px 0px 12px;
+    -moz-border-radius: 0px 12px 0px 12px;
+    -ms-border-radius: 0px 12px 0px 12px;
+    -o-border-radius: 0px 12px 0px 12px;
+}
+.why-us .image::after {
+    content: "";
+    width: 225px;
+    height: 187px;
+    background-color: #094E81;
+    border-radius: 0px 12px 0px 12px;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    z-index: -1;
+    -webkit-border-radius: 0px 12px 0px 12px;
+    -moz-border-radius: 0px 12px 0px 12px;
+    -ms-border-radius: 0px 12px 0px 12px;
+    -o-border-radius: 0px 12px 0px 12px;
+}
+.why-us .image img {
+    max-width: 100%;
+}
+/* End Why Us Section */
 
