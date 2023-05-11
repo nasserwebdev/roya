@@ -1,10 +1,9 @@
 /* Start Global Rules */
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
 :root {
-    --main-color: #5FAD51;
+    --main-color: #5fad51;
     --secondary-color: #242a37;
     --main-font-size: 16px;
-    --main-padding: 140px;
     --transition-3s: .3s ease-in-out;
 }
 * {
@@ -17,13 +16,26 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Tajawal', sans-serif;
-}
-section {
-    padding-top: var(--main-padding);
+    text-align: right;
 }
 ul {
     padding: 0;
     list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+::before,
+::after {
+    content: "";
+    position: absolute;
+}
+section {
+    padding: 25px 0;
+    margin-top: 80px;
 }
 .main-heading {
     font-size: 40px;
@@ -73,7 +85,6 @@ nav .nav-left ul li:first-child a {
 }
 nav .nav-left ul li a {
     font-size: var(--main-font-size);
-    text-decoration: none;
 }
 nav .nav-left ul li .btn {
     display: block;
@@ -111,7 +122,6 @@ header .header-wrap {
 }
 header .header-wrap .text-right {
     margin: 100px 0;
-    text-align: right;
     width: 770px;
 }
 header .header-wrap .text-right h4 {
@@ -121,11 +131,9 @@ header .header-wrap .text-right h4 {
     position: relative;
 }
 header .header-wrap .text-right h4::before {
-    content: "";
     width: 20px;
     height: 2px;
     background-color: var(--main-color);
-    position: absolute;
     right: -30px;
     top: 50%;
     transform: translateY(-50%);
@@ -215,14 +223,10 @@ header .header-wrap .text-right .b2 {
     border: none;
     margin-right: 12px;
     padding-top: 10px;
-    text-align: right;
 }
 header .header-wrap .text-right .b2 a {
     color: #094E81;
     font-size: 20px;
-}
-header .header-wrap .text-right button a {
-    text-decoration: none;
 }
 header .header-wrap .img-box {
     text-align: center;
@@ -295,7 +299,6 @@ header .header-wrap .img-box .clients img {
     width: 174px;
     height: 40px;
     margin: 0;
-    max-width: 100%;
 }
 header .header-wrap .angle-down {
     width: 46px;
@@ -341,67 +344,68 @@ header .header-wrap .angle-down .down {
 /* End Header */
 
 /* Start Our Services */
-.our-services .sec-heading {
-    margin-bottom: 52px;
+.services {
+    margin-top: 80px;
 }
-.our-services > p {
+.services p {
     font-size: 18px;
     margin-top: 17px;
     color: #626670;
 }
-.our-services .srv {
-    height: 330px;
-    padding: 30px;
-    margin-bottom: 39px;
+.services .srv {
+    height: 280px;
     background-color: #fff;
+    border: 1px solid #fff;
     box-shadow: 0 30px 50px #11316A1F;
+    margin-top: 39px;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
+    padding: 20px;
     transition: var(--transition-3s);
     -webkit-transition: var(--transition-3s);
     -moz-transition: var(--transition-3s);
     -ms-transition: var(--transition-3s);
     -o-transition: var(--transition-3s);
 }
-.our-services .srv:hover {
-    background-color: rgb(94,173,81,.8);
+.services .srv:hover {
+    background-color: var(--main-color);
+} 
+@media (max-width : 991px) {
+    .services .srv {
+        height: auto;
+    }
 }
-.our-services .srv .i1 {
-    background-color: var(--main-color) !important;
+.services .srv img {
+    width: 48px;
+    height: 48px;
 }
-.our-services .srv .icon {
-    width: 110px;
-    height: 110px;
-    background-color: #F6FAF5;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.services .srv:hover img {
+    filter: opacity(.5);
+    -webkit-filter: brightness(.5);
 }
-.our-services .srv .icon img {
-    max-width: 100%;
-}
-.our-services .srv .text h3 {
-    font-size: 24px;
+.services .srv h4 {
+    font-size: 18px;
     color: #1A1C1E;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
-.our-services .srv .text p {
+.services .srv p {
     color: #767E87;
-    margin-bottom: 24px;
+    line-height: 24px;
+    font-size: 14px;
 }
-.our-services .srv:hover .text h3,
-.our-services .srv:hover .text p {
+.services .srv:hover h4,
+.services .srv:hover p {
     color: #fff;
 }
+/*
+2: 00
+.services .srv:hover .text h3,
+.services .srv:hover .text p {
+    color: #fff;
+} */
 /* End Our Services */
 
 /* Start Why Us Section */
@@ -413,11 +417,9 @@ header .header-wrap .angle-down .down {
     margin-right: 55px;
 }
 .why-us h6::before {
-    content: "";
     width: 42px;
     height: 2px;
     background-color: var(--main-color);
-    position: absolute;
     right: -55px;
     top: 8px;
 }
@@ -462,12 +464,10 @@ header .header-wrap .angle-down .down {
     position: relative;
 }
 .why-us .image::before {
-    content: "";
     width: 137px;
     height: 111px;
     background-color: var(--main-color);
     border-radius: 0px 12px 0px 12px;
-    position: absolute;
     top: -20px;
     right: -20px;
     z-index: -1;
@@ -477,12 +477,10 @@ header .header-wrap .angle-down .down {
     -o-border-radius: 0px 12px 0px 12px;
 }
 .why-us .image::after {
-    content: "";
     width: 225px;
     height: 187px;
     background-color: #094E81;
     border-radius: 0px 12px 0px 12px;
-    position: absolute;
     bottom: -20px;
     left: -20px;
     z-index: -1;
@@ -491,8 +489,206 @@ header .header-wrap .angle-down .down {
     -ms-border-radius: 0px 12px 0px 12px;
     -o-border-radius: 0px 12px 0px 12px;
 }
-.why-us .image img {
-    max-width: 100%;
-}
 /* End Why Us Section */
+
+/* Start Works & Products */
+.works .main-head,
+.products .main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.works .main-head .arrow span,
+.products .main-head .arrow span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border: 1px solid #18191E;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.works .main-head .arrow span.right,
+.products .main-head .arrow span.right {
+    border: 1px solid #7E8485;
+}
+.works .main-head .arrow span .angle,
+.products .main-head .arrow span .angle {
+    font-size: 14px;
+}
+.works .main-head .arrow span .angle-right,
+.products .main-head .arrow span .angle-right {
+    color: #7E8485;
+}
+
+.works .box,
+.products .box {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(95 173 81 / 90%);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    box-shadow: 0 30px 50px #2C629B1F;
+    position: relative;
+}
+.works .box .image,
+.products .box .image {
+    width: 48px;
+    height: 48px;
+    background-color: #094E81;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.works .box .text,
+.products .box .text {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.works .box .text h4,
+.products .box .text h4 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.works .box .text span,
+.products .box .text span {
+    font-size: 14px;
+}
+/* End Works & Products */
+
+/* Start Achievements */
+.achievements .main-par {
+    width: 570px;
+    font-size: 16px;
+    color: #626670;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.achievements .box {
+    background-color: #fff;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 8px 20px 60px #11316A1F;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items:first center;
+}
+.achievements .box .text h4 {
+    font-size: 35px;
+    color: #242A37;
+    margin: 0;
+    font-weight: bold;
+}
+.achievements .box .text p {
+    font-size: 18px;
+    color: #242A37;
+}
+.achievements .box .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #F1F5F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End Achievements */
+
+/* Start Let's Do Something Cool */
+.cool {
+    position: relative;
+    margin-top: 250px;
+}
+.cool .text {
+    background: url("../img/cool-bg.png") no-repeat center;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    color: #fff;
+}
+.cool .text h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+.cool .text p {
+    width: 700px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 34px;
+}
+.cool .text a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 147px;
+    height: 48px;
+    border-radius: 24px;
+    padding: 10px 10px 10px 3px;
+    color: var(--main-color);
+    font-size: 16px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    margin-top: 30px;
+}
+.cool .text a .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cool .text a .icon .arrow-left {
+    color: #fff;
+} 
+.cool .bulb {
+    position: absolute;
+    top: -155px;
+    left: 70px;
+}
+.cool .bulb img {
+    width: 550px;
+    height: 500px;
+}
+/* End Let's Do Something Cool */
 

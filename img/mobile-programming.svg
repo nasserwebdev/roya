@@ -1,0 +1,8 @@
+<svg id="vuesax_bulk_mobile-programming" data-name="vuesax/bulk/mobile-programming" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="mobile-programming">
+    <path id="Vector" d="M0,0H24V24H0Z" fill="none" opacity="0"/>
+    <path id="Vector-2" data-name="Vector" d="M5,0a5,5,0,1,0,5,5A5,5,0,0,0,5,0ZM4.16,6.27a.658.658,0,0,1,0,.92.652.652,0,0,1-.92,0L1.51,5.46a.658.658,0,0,1,0-.92L3.24,2.81a.651.651,0,0,1,.92.92L2.89,5Zm4.32-.81L6.75,7.19a.652.652,0,0,1-.92,0,.658.658,0,0,1,0-.92L7.1,5,5.83,3.73a.651.651,0,1,1,.92-.92L8.48,4.54A.658.658,0,0,1,8.48,5.46Z" transform="translate(13 13)" fill="#fff"/>
+    <path id="Vector-3" data-name="Vector" d="M18,5v7a4.941,4.941,0,0,0-3-1,5,5,0,0,0-3,9H5c-3.5,0-5-2-5-5V5C0,2,1.5,0,5,0h.93l.04,1.53A1.512,1.512,0,0,0,7.47,3H10.5A1.511,1.511,0,0,0,12,1.5V0h1C16.5,0,18,2,18,5Z" transform="translate(3 2)" fill="#fff" opacity="0.4"/>
+    <path id="Vector-4" data-name="Vector" d="M6.07,0V1.5A1.511,1.511,0,0,1,4.57,3H1.54A1.512,1.512,0,0,1,.04,1.53L0,0Z" transform="translate(8.93 2)" fill="#fff"/>
+  </g>
+</svg>
